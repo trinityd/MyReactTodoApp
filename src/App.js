@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Todos from "./components/Todos";
 import AddTodo from "./components/AddTodo";
@@ -38,7 +38,7 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get("http://jsonplaceholder.typicode.com/todos?_limit=8")
+      .get("https://jsonplaceholder.typicode.com/todos?_limit=8")
       .then((res) => {
         this.setState({ todos: res.data });
       });
@@ -65,7 +65,7 @@ class App extends Component {
 
     // Fake Delete
     axios
-      .delete(`http://jsonplaceholder.typicode.com/todos/${id}`)
+      .delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
       .then((res) => {
         this.setState({
           todos: [...this.state.todos.filter((todo) => todo.id !== id)],
@@ -84,7 +84,7 @@ class App extends Component {
     // this.setState({ todos: [...this.state.todos, newTodo]})
 
     // Fake Post
-    axios.post("http://jsonplaceholder.typicode.com/todos", {}).then((res) => {
+    axios.post("https://jsonplaceholder.typicode.com/todos", {}).then((res) => {
       res.data.title = title;
       res.data.id = uuid();
       res.data.completed = false;
@@ -94,7 +94,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter basename="/">
         <div className="App">
           <div className="container">
             <Header />
@@ -117,7 +117,7 @@ class App extends Component {
             <Route path="/about" component={About} />
           </div>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
