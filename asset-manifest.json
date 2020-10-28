@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trinityd/MyReactTodoApp/static/css/main.c962220d.chunk.css",
+    "main.js": "/trinityd/MyReactTodoApp/static/js/main.9838be2e.chunk.js",
+    "main.js.map": "/trinityd/MyReactTodoApp/static/js/main.9838be2e.chunk.js.map",
+    "runtime-main.js": "/trinityd/MyReactTodoApp/static/js/runtime-main.bd59c32f.js",
+    "runtime-main.js.map": "/trinityd/MyReactTodoApp/static/js/runtime-main.bd59c32f.js.map",
+    "static/js/2.4cf45965.chunk.js": "/trinityd/MyReactTodoApp/static/js/2.4cf45965.chunk.js",
+    "static/js/2.4cf45965.chunk.js.map": "/trinityd/MyReactTodoApp/static/js/2.4cf45965.chunk.js.map",
+    "static/js/3.18d3184f.chunk.js": "/trinityd/MyReactTodoApp/static/js/3.18d3184f.chunk.js",
+    "static/js/3.18d3184f.chunk.js.map": "/trinityd/MyReactTodoApp/static/js/3.18d3184f.chunk.js.map",
+    "index.html": "/trinityd/MyReactTodoApp/index.html",
+    "static/css/main.c962220d.chunk.css.map": "/trinityd/MyReactTodoApp/static/css/main.c962220d.chunk.css.map",
+    "static/js/2.4cf45965.chunk.js.LICENSE.txt": "/trinityd/MyReactTodoApp/static/js/2.4cf45965.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd59c32f.js",
+    "static/js/2.4cf45965.chunk.js",
+    "static/css/main.c962220d.chunk.css",
+    "static/js/main.9838be2e.chunk.js"
+  ]
+}
